@@ -19,8 +19,8 @@ Everyone will get a chance to **be creative**, and work through some really **to
 
 ### Timeline
 
-* **Assigned:** ADD START DATE HERE
-* **Due:** ADD DUE DATE HERE at 9:00AM
+* **Assigned:** Thursday April 6th
+* **Due:** Monday April 10th at 9:15AM
 
 
 ---
@@ -60,7 +60,6 @@ Your app must:
 * **A `readme.md` file** with a short description of the project, a list of which technologies you used for which parts of the app, an explanation of your approach (share some part of the code), and optionally a list of unsolved problems,  screenshots, etc.  See the [example readme](https://github.com/sf-wdi-labs/readme-example).
 * A **link to your hosted working game** in your game's Github repo.
 * A **link to your hosted working game** in the "my work" section of your personal website.
-* A
 
 ---
 
@@ -78,7 +77,7 @@ Your app must:
 
 ### Game Types
 
-####Racing Game
+#### Racing Game
 
 **We suggest and expect that most of you will build a racing game**. Two or more players should be able to use the keyboard to move their "cars" across the browser window.
 
@@ -165,9 +164,8 @@ These are some ideas that could take your game "above and beyond." **Don't focus
 
     Score | Expectations
     ----- | ------------
-    **0** | _Incomplete (not attempted)._
-    **1** | _Does not meet expectations. Work on this._
-    **2** | _Meets expectations, good job!_
-    **3** | _Exceeds expectations, wow!_
+    **0** | _Does not meet expectations. Work on this._
+    **1** | _Meets expectations, good job!_
+    **2** | _Exceeds expectations, wow!_
 
  You will receive a total score that is a composite of these scores. This will serve as a helpful overall gauge of whether you met the project goals, but __the more important scores are the individual ones for each category__ above, which can help you identify where to focus your efforts for the next project!
