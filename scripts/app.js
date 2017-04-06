@@ -10,10 +10,11 @@ $(document).on("ready", function(){
 				}, 0);
 			}
 
+
 		})
 
 		$(document).on('keydown', function(e){
-			if(e.keyCode == 89) {
+			if(e.keyCode == 88) {
 				$('#bluecirc').animate({
                     right: '-=10'
 				}, 0);
