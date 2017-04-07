@@ -21,3 +21,16 @@
 	top: 300px;
 }
 
+.abcBoard1 {
+	background-color: black
+	width: 50px;
+	height: 50px;
+	display: block;
+}
+
+.abcBoard2 {
+	background-color: black
+	width: 50px;
+	height: 50px;
+	display: block;
+}
