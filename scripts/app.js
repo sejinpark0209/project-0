@@ -1,18 +1,5 @@
 $(document).on("ready", function(){
 
-	
-
-		//create function to move red circle
-
-	
-  //   var possible = "abcdefghijklmnopqrstuvwxyz";
-		// var text = "";
-		// 	for( var i=0; i < 5; i++ ) {
-  //       		text += possible.charAt(Math.floor(Math.random() * possible.length));
-  //   		}
-  //   		console.log(text);
-  // keycode. 65 - 90
-
 
 
 		var possible1 = "asdzxc";
@@ -46,16 +33,10 @@ $(document).on("ready", function(){
 			}
 		]
 
-		
-
-
 		var userAnswer = "";
 		var ranQnum = Math.floor(Math.random() * 6) + 0;
 		console.log(ranQnum);  
 
-
-
-		
 
 		$(document).on('keydown', function(e){
     	
@@ -89,9 +70,9 @@ $(document).on("ready", function(){
 				} else if (ranQnum < 3) {
 					userAnswer = prompt(robotQsn[ranQnum].question);
 					if(userAnswer !== robotQsn[ranQnum].question) {
-						alert("You are Human! player 1 win!")
+						alert("You are Human! you lose!")
 					} else {
-						alert("Are you robot? player 2 win!")
+						alert("Are you robot? you win!")
 					}
 				}
 			}

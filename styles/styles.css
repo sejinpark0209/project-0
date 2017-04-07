@@ -1,15 +1,21 @@
 body {
 	margin: 0 auto;
+	background-image: url("back2modi.jpg");
 
 }
 .tostart {
 	font-family: 'Press Start 2P', cursive;
 	text-align: center;
 }
-
 .background {
-	width: 700px;
-	height: 600px;
+	/*background-image: url("back2modi.jpg");*/
+
+}
+
+#bg2 {
+	width: 1200px;
+	height: 700px;
+	display: inline;
 }
 
 .title {
@@ -46,7 +52,7 @@ body {
     border: 7px solid black;
     border-radius: 10px;
     position: relative;
-    left: 120px;
+    left: 350px;
 }
 
 .abcBoard2 {
@@ -61,5 +67,5 @@ body {
     border: 7px solid black;
     border-radius: 10px;
     position: relative;
-    left: 120px;
+    left: 420px;
 }
