@@ -1,7 +1,20 @@
+body {
+	margin: 0 auto;
+
+}
+.tostart {
+	font-family: 'Press Start 2P', cursive;
+	text-align: center;
+}
 
 .background {
-	width: 500px;
+	width: 700px;
 	height: 600px;
+}
+
+.title {
+	font-family: 'Press Start 2P', cursive;
+	text-align: center;
 }
 
 #redcirc {
@@ -32,7 +45,8 @@
 	margin: 70px;
     border: 7px solid black;
     border-radius: 10px;
-
+    position: relative;
+    left: 120px;
 }
 
 .abcBoard2 {
@@ -46,5 +60,6 @@
 	margin: 70px;
     border: 7px solid black;
     border-radius: 10px;
-
+    position: relative;
+    left: 120px;
 }

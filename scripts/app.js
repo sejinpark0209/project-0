@@ -12,18 +12,26 @@ $(document).on("ready", function(){
   //   		}
   //   		console.log(text);
   // keycode. 65 - 90
+
+
+
 		var possible1 = "asdzxc";
 		var text = "";
 		text = possible1.charAt(Math.floor(Math.random() * possible1.length));
 
 		$(document).on('keydown', function(e){
-    
+    	
+    		var spaceStart = $('.tostart');
+
+  			if(e.keyCode == 32) {
+  				spaceStart.remove();
+  			}
     		
     		var alphaKeyCode = text.charCodeAt(0)-32;
     		console.log(alphaKeyCode);
 			if(e.keyCode == alphaKeyCode) {
 				$('#redcirc').animate({
-                   	right: '-=10'
+                   	right: '-=100'
 				}, 0);
 			} 
 			text = possible1.charAt(Math.floor(Math.random() * possible1.length));
@@ -41,7 +49,7 @@ $(document).on("ready", function(){
 			var alphaKeyCode2 = text2.charCodeAt(0)-32;
 			if(e.keyCode == alphaKeyCode2) {
 				$('#bluecirc').animate({
-                    right: '-=10'
+                    right: '-=100'
 				}, 0);
 			} 
 			text2 = possible2.charAt(Math.floor(Math.random() * possible2.length));
@@ -49,6 +57,11 @@ $(document).on("ready", function(){
 				console.log(text2)
 			
 		});
+
+		// var backGround = $('.background');
+		// if($('#redcirc').position() === backGround.offset().right) {
+		// 	console.log("player 1 won");
+		// }
 
 
 
