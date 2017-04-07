@@ -38,9 +38,22 @@ $(document).on("ready", function(){
 		console.log(ranQnum);  
 
 
+  		function blink(event){
+			$(event).fadeOut('slow', function(){
+    		$(this).fadeIn('slow', function(){
+       		 blink(this);
+    			});
+			});
+		}
+
+		blink('.tostart');
+
 		$(document).on('keydown', function(e){
     	
-    		var spaceStart = $('.tostart');
+    		
+			var spaceStart = $('.tostart');
+    
+
 
   			if(e.keyCode == 32) {
   				spaceStart.remove();
@@ -53,6 +66,7 @@ $(document).on("ready", function(){
                    	right: '-=100'
 				}, 0);
 			} 
+
 			text = possible1.charAt(Math.floor(Math.random() * possible1.length));
 			$('.abcBoard1').text(text);
 				console.log(text)
