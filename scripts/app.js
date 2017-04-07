@@ -37,7 +37,13 @@ $(document).on("ready", function(){
 			text = possible1.charAt(Math.floor(Math.random() * possible1.length));
 			$('.abcBoard1').text(text);
 				console.log(text)
-			
+
+			var redCircPos = $('#redcirc').position();	
+			console.log(redCircPos);
+			if(redCircPos.left === 400) {
+				alert("player1 won");
+				//reset now
+			}
 
 		});
 
@@ -56,6 +62,12 @@ $(document).on("ready", function(){
 			$('.abcBoard2').text(text2);
 				console.log(text2)
 			
+			var blueCircPos = $('#bluecirc').position();	
+			console.log(blueCircPos);
+			if(blueCircPos.left === 400) {
+				alert("player2 won");
+
+			}
 		});
 
 		// var backGround = $('.background');
