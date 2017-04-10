@@ -57,7 +57,10 @@ $(document).on("ready", function(){
 			console.log(killerPos);
 			console.log(marioPos);
 			if(marioPos.left > 900) {
-				$('.title').text("Mario won!")
+				$('.title').text(function () {
+					$('.title').text("Mario won!");
+					$('.title').css("font-size", "75px");
+				})
 				$('#bb8').remove()
 				$('#killer').remove()
 				$('.abcBoard1').remove()
@@ -66,7 +69,10 @@ $(document).on("ready", function(){
 				$('#mario').remove()
 				$('.abcBoard1').remove()
 				$('.abcBoard2').remove()
-				$('.title').text("<h1>Mario lose!</h1>")
+				$('.title').text(function () {
+					$('.title').text("Mario lose!");
+					$('.title').css("font-size", "75px");
+				})
 			}
 
 
@@ -96,7 +102,10 @@ $(document).on("ready", function(){
 			var bb8Pos = $('#bb8').position();	
 			console.log(bb8Pos);
 			if(bb8Pos.left > 900) {
-				$('.title').text("bb8 won!")
+				$('.title').text(function () {
+					$('.title').text("BB8 won!");
+					$('.title').css("font-size", "75px");
+				})
 				$('.abcBoard1').remove()
 				$('.abcBoard2').remove()
 				$('#mario').remove()
@@ -105,7 +114,10 @@ $(document).on("ready", function(){
 				$('#bb8').remove()
 				$('.abcBoard1').remove()
 				$('.abcBoard2').remove()
-				$('.title').text("bb8 lose!")
+				$('.title').text(function () {
+					$('.title').text("BB8 lose!");
+					$('.title').css("font-size", "75px");
+				})
 			}
 		});	
 	
