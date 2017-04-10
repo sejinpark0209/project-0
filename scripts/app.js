@@ -57,12 +57,19 @@ $(document).on("ready", function(){
 			$('.abcBoard1').text(text);
 				console.log(text)
 
+			var killerPos = $('#killer').position();
 			var marioPos = $('#mario').position();	
+			console.log(killerPos);
 			console.log(marioPos);
 			if(marioPos.left > 900) {
-				//red wins!
-				alert("hi")
+				$('.title').text("Mario won!")
+			} else if(marioPos.left < killerPos.left) {
+				$('#mario').remove()
+				$('.abcBoard1').remove()
+				$('.abcBoard2').remove()
+				$('.title').text("Mario lose!")
 			}
+
 
 		});
 
@@ -86,12 +93,16 @@ $(document).on("ready", function(){
 			$('.abcBoard2').text(text2);
 				console.log(text2)
 			
+			var killerPos = $('#killer').position();
 			var bb8Pos = $('#bb8').position();	
 			console.log(bb8Pos);
 			if(bb8Pos.left > 900) {
-				// blue wins!
-				alert("blue wins")
-
+				$('.title').text("bb8 won!")
+			} else if(bb8Pos.left < killerPos.left) {
+				$('#bb8').remove()
+				$('.abcBoard1').remove()
+				$('.abcBoard2').remove()
+				$('.title').text("bb8 lose!")
 			}
 		});	
 	
