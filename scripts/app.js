@@ -6,32 +6,7 @@ $(document).on("ready", function(){
 		var text = "";
 		text = possible1.charAt(Math.floor(Math.random() * possible1.length));
 
-		var robotQsn = [
-			{
-				question: "3 + 98",
-				expectedAnswer: "101"
-			},
-			{
-				question: "12 * 12 ?",
-				expectedAnswer: "144"
-			},
-			{
-				question: "6 * 9 ?",
-				expectedAnswer: "54"
-			},
-			{
-				question: "83214 * 39102 ?",
-				expectedAnswer: "3253833828"
-			},
-			{
-				question: "4563452 % 12 ?",
-				expectedAnswer: "8"
-			},
-			{
-				question: "2395123 * 12?",
-				expectedAnswer: "28741476"
-			}
-		]
+	
 
 		var userAnswer = "";
 		var ranQnum = Math.floor(Math.random() * 6) + 0;
@@ -47,6 +22,11 @@ $(document).on("ready", function(){
 		}
 
 		blink('.tostart');
+
+		// add auto killer movement
+			
+
+
 
 		$(document).on('keydown', function(e){
     	
@@ -74,21 +54,7 @@ $(document).on("ready", function(){
 			var redCircPos = $('#redcirc').position();	
 			console.log(redCircPos);
 			if(redCircPos.left === 1000) {
-				if(ranQnum > 2) {
-					userAnswer = prompt(robotQsn[ranQnum].question);
-					if(userAnswer !== robotQsn[ranQnum].question) {
-						alert("Are you robot? you lose!")
-					} else {
-						alert("You are Human! you win!")
-					}
-				} else if (ranQnum < 3) {
-					userAnswer = prompt(robotQsn[ranQnum].question);
-					if(userAnswer !== robotQsn[ranQnum].question) {
-						alert("You are Human! you lose!")
-					} else {
-						alert("Are you robot? you win!")
-					}
-				}
+				//red wins!
 			}
 
 		});
@@ -104,7 +70,11 @@ $(document).on("ready", function(){
 				$('#bluecirc').animate({
                     right: '-=100'
 				}, 0);
-			} 
+			} else if(e.keyCode == 77) {
+				$('#bluecirc').animate({
+                    right: '-=300'
+				}, 0);
+			}
 			text2 = possible2.charAt(Math.floor(Math.random() * possible2.length));
 			$('.abcBoard2').text(text2);
 				console.log(text2)
@@ -112,21 +82,7 @@ $(document).on("ready", function(){
 			var blueCircPos = $('#bluecirc').position();	
 			console.log(blueCircPos);
 			if(blueCircPos.left === 1000) {
-				if(ranQnum > 2) {
-					userAnswer = prompt(robotQsn[ranQnum].question);
-					if(userAnswer !== robotQsn[ranQnum].question) {
-						alert("Are you robot? you lose!")
-					} else {
-						alert("You are Human! you win!")
-					}
-				} else if (ranQnum < 3) {
-					userAnswer = prompt(robotQsn[ranQnum].question);
-					if(userAnswer !== robotQsn[ranQnum].question) {
-						alert("You are Human! you win!")
-					} else {
-						alert("Are you robot? you lose!")
-					}
-				}
+				// blue wins!
 
 			}
 		});	
