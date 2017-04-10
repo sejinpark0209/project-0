@@ -24,7 +24,7 @@ $(document).on("ready", function(){
 		blink('.tostart');
 
 		// add auto killer movement
-
+	
 
 
 
@@ -32,6 +32,12 @@ $(document).on("ready", function(){
     	
     		
 			var spaceStart = $('.tostart');
+
+			var interval = setInterval(function(){ 
+				$("#killer").animate({
+					right: '-=40'
+				}, 200);
+			}, 3000);
     
 
 
