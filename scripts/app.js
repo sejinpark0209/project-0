@@ -24,7 +24,7 @@ $(document).on("ready", function(){
 		blink('.tostart');
 
 		// add auto killer movement
-			
+
 
 
 
@@ -42,19 +42,20 @@ $(document).on("ready", function(){
     		var alphaKeyCode = text.charCodeAt(0)-32;
     		console.log(alphaKeyCode);
 			if(e.keyCode == alphaKeyCode) {
-				$('#redcirc').animate({
+				$('#mario').animate({
                    	right: '-=100'
-				}, 0);
+				}, 200);
 			} 
 
 			text = possible1.charAt(Math.floor(Math.random() * possible1.length));
 			$('.abcBoard1').text(text);
 				console.log(text)
 
-			var redCircPos = $('#redcirc').position();	
-			console.log(redCircPos);
-			if(redCircPos.left === 1000) {
+			var marioPos = $('#mario').position();	
+			console.log(marioPos);
+			if(marioPos.left > 900) {
 				//red wins!
+				alert("hi")
 			}
 
 		});
@@ -67,22 +68,23 @@ $(document).on("ready", function(){
 		$(document).on('keydown', function(e){
 			var alphaKeyCode2 = text2.charCodeAt(0)-32;
 			if(e.keyCode == alphaKeyCode2) {
-				$('#bluecirc').animate({
+				$('#bb8').animate({
                     right: '-=100'
-				}, 0);
+				}, 200);
 			} else if(e.keyCode == 77) {
-				$('#bluecirc').animate({
+				$('#bb8').animate({
                     right: '-=300'
-				}, 0);
+				}, 200);
 			}
 			text2 = possible2.charAt(Math.floor(Math.random() * possible2.length));
 			$('.abcBoard2').text(text2);
 				console.log(text2)
 			
-			var blueCircPos = $('#bluecirc').position();	
-			console.log(blueCircPos);
-			if(blueCircPos.left === 1000) {
+			var bb8Pos = $('#bb8').position();	
+			console.log(bb8Pos);
+			if(bb8Pos.left > 900) {
 				// blue wins!
+				alert("blue wins")
 
 			}
 		});	
