@@ -20,12 +20,7 @@ $(document).on("ready", function(){
     			});
 			});
 		}
-
 		blink('.tostart');
-
-		// add auto killer movement
-	
-
 
 
 		$(document).on('keydown', function(e){
@@ -63,11 +58,15 @@ $(document).on("ready", function(){
 			console.log(marioPos);
 			if(marioPos.left > 900) {
 				$('.title').text("Mario won!")
+				$('#bb8').remove()
+				$('#killer').remove()
+				$('.abcBoard1').remove()
+				$('.abcBoard2').remove()
 			} else if(marioPos.left < killerPos.left) {
 				$('#mario').remove()
 				$('.abcBoard1').remove()
 				$('.abcBoard2').remove()
-				$('.title').text("Mario lose!")
+				$('.title').text("<h1>Mario lose!</h1>")
 			}
 
 
@@ -98,6 +97,10 @@ $(document).on("ready", function(){
 			console.log(bb8Pos);
 			if(bb8Pos.left > 900) {
 				$('.title').text("bb8 won!")
+				$('.abcBoard1').remove()
+				$('.abcBoard2').remove()
+				$('#mario').remove()
+				$('#killer').remove()
 			} else if(bb8Pos.left < killerPos.left) {
 				$('#bb8').remove()
 				$('.abcBoard1').remove()

@@ -31,7 +31,6 @@ body {
 }
 
 #mario {
-
 	display: block;
 	position: absolute;
 	top: 250px;
@@ -40,7 +39,6 @@ body {
 }
 
 #bb8 {
-
 	display: block;
 	position: absolute;
 	top: 280px;
@@ -57,10 +55,10 @@ body {
 	font-family: 'Press Start 2P', cursive;
 	font-size: 50px;
 	margin: 70px;
-    border: 7px solid black;
+    border: 7px solid red;
     border-radius: 10px;
     position: relative;
-    left: 350px;
+    left: 300px;
 }
 
 .abcBoard2 {
@@ -72,8 +70,8 @@ body {
 	font-family: 'Press Start 2P', cursive;
 	font-size: 50px;
 	margin: 70px;
-    border: 7px solid black;
+    border: 7px solid orange;
     border-radius: 10px;
     position: relative;
-    left: 420px;
+    left: 370px;
 }
